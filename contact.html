@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US | LagunaWISE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <ul>
+            <div class="sidebar-branding">
+                <div class="logo-group">
+                    <img src="New Project 256 [0677CAA].svg" alt="Logo" class="side-logo" width="100px">
+                    <img src="WiseFeature_20240920_161631_0000.svg" alt="LagunaWISE" class="side-text-svg" width="60%">
+                </div>    
+                <button onclick="toggleSidebar()" id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/>
+                    </svg>
+                </button>
+            </div>
+            <li>
+                <a href="homepage.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M603.5-193.5Q560-237 560-300t43.5-106.5Q647-450 710-450t106.5 43.5Q860-363 860-300t-43.5 106.5Q773-150 710-150t-106.5-43.5Zm156-57Q780-271 780-300t-20.5-49.5Q739-370 710-370t-49.5 20.5Q640-329 640-300t20.5 49.5Q681-230 710-230t49.5-20.5ZM160-260v-80h320v80H160Zm-16.5-293.5Q100-597 100-660t43.5-106.5Q187-810 250-810t106.5 43.5Q400-723 400-660t-43.5 106.5Q313-510 250-510t-106.5-43.5Zm156-57Q320-631 320-660t-20.5-49.5Q279-730 250-730t-49.5 20.5Q180-689 180-660t20.5 49.5Q221-590 250-590t49.5-20.5ZM480-620v-80h320v80H480Zm230 320ZM250-660Z"/></svg>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/></svg>
+                    <span>DIVISIONS</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li><a href="weather.html">WEATHER</a></li>
+                        <li><a href="space.html">SPACE</a></li>
+                        <li><a href="health.html">HEALTH</a></li>
+                        <li><a href="environment.html">ENVIRONMENT</a></li>
+                        <li><a href="ideology.html">IDEOLOGY</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="contact.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span>CONTACT US</span>
+                </a>
+            </li>
+            <li>
+                <a href="registration.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M360-600v-80h360v80H360Zm0 120v-80h360v80H360Zm120 320H200h280Zm0 80H240q-50 0-85-35t-35-85v-120h120v-560h600v361q-20-2-40.5 1.5T760-505v-295H320v480h240l-80 80H200v40q0 17 11.5 28.5T240-160h240v80Zm80 0v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T903-300L683-80H560Zm300-263-37-37 37 37ZM620-140h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg>
+                    <span>SIGN UP</span>
+                </a>
+            </li>
+            <li>
+                <div class="phst-clock">
+                    <div>Philippine Standard Time</div>
+                    <div id="real-time"></div>
+                    <div id="real-date"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="content">
+        <header class="content-header">
+            <h1>CONTACT US</h1>
+            <p>We'd love to hear from you. Get in touch with the LagunaWISE team.</p>
+        </header>
+        <div class="divider"></div>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Have questions about our updates, want to contribute to our educational resources, or need to report a local event? Reach out to us using the form or through our direct channels.</p>
+                <div class="info-block">
+                    <h3>📍 Location</h3>
+                    <p>Laguna Province, Philippines</p>
+                </div>
+                <div class="info-block">
+                    <h3>✉️ Email</h3>
+                    <p><a href="mailto:lagunawise.ph@gmail.com">lagunawise.ph@gmail.com</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>📱 Social Media</h3>
+                    <ul class="social-links">
+                        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/lagunawise.ph" target="_blank">LagunaWISE</a></li>
+                        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/lagunawise.ph" target="_blank">@lagunawise.ph</a></li>
+                        <li><strong>X (Twitter):</strong> <a href="https://x.com/lagunawise_ph" target="_blank">@lagunawise_ph</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 LagunaWISE. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
